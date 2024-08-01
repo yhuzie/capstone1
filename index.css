@@ -1,48 +1,69 @@
-/* Basic styling for the body */
+/* General Styling */
 body {
-    font-family: 'Roboto', sans-serif; /* Set the font family to Roboto */
-    color: #333; /* Set the text color */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Styling for headings */
 h1, h2, h3 {
-    margin-bottom: 20px; /* Add margin below headings */
+    margin-bottom: 20px;
 }
 
-/* Styling for the navbar */
+/* Navbar Styling */
 .navbar-brand, .nav-link {
-    font-weight: bold; /* Make brand and links bold */
+    font-weight: bold;
 }
-/*
-.navbar-brand {
-    padding-left: -25px;
-}
-*/
+
 .nav-link-spacing {
-    padding-left: ; /* Adjust the left padding as needed */
-    padding-right: ; /* Adjust the right padding as needed */
+    padding-left: ; /* Specify padding value if needed */
+    padding-right: ; /* Specify padding value if needed */
 }
-/* Landing section styling */
+
+/* Landing Section Styling */
 #landing {
-    background-color: dimgray; /* Set background color */
-    color: whitesmoke; /* Set text color */
+    background-color: dimgray;
+    color: whitesmoke;
     background-image: url("./images/sakura.png");
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .rounded-img {
     border-radius: 50%;
-    width: 200px; /* Adjust the size as needed */
-    height: 200px; /* Adjust the size as needed */
-    object-fit: cover; /* Ensures the image covers the area */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
+/* Projects Section Styling */
+#projects {
+    background-color: #f8f9fa;
+}
+
+.card-title {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.card-img-top {
+    max-height: 180px;
+    object-fit: cover;
+}
+
+/* Tools Section Styling */
 #tools {
     background-color: whitesmoke;
+}
+
+.toolsadjust, .frontendadjust, .mernadjust, .othertoolsadjust {
+    font-weight: bold;
+}
+
+.frontendadjust {
+    margin-top: auto;
 }
 
 .responsive-img {
@@ -50,91 +71,49 @@ h1, h2, h3 {
     height: 30px;
 }
 
-/* Projects and tools sections styling */
-#projects {
-    background-color: #f8f9fa; /* Set background color */
-
-}
-
-.text-center {
-    font-weight: bold;
-    padding-top: 1rem;
-}
-
-
-.toolsadjust{
-    font-weight: bold;
-}
-
-.mernadjust {
-    margin-top: 1rem;
-}
-
-.othertoolsadjust{
-    margin-top: 1rem;
-}
-
-.card-title {
-    text-align: center; /* Center the text within the card title */
-    margin-top: 0; /* Optional: Remove any top margin */
-    padding-top: 10px; /* Optional: Add padding if needed */
-    font-weight: bold;
-}
-
-
-/* Contacts section styling */
+/* Contact Section Styling */
 #contacts {
-    background-color: #ffffff; /* Set background color */
-    color: #212529; /* Set text color */
+    background-color: #ffffff;
+    color: #212529;
 }
 
-/* Centering and spacing icons */
 .icon-container {
-    margin-top: 20px; /* Add margin above the icons */
+    margin-top: 15px;
 }
 
 .social-icon {
-    margin: 0 20px; /* Add horizontal margin between icons */
-    color: #333; /* Set icon color */
-    font-size: 24px; /* Adjust icon size */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    margin: 0 20px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
     text-decoration: none;
 }
 
 .social-icon:hover {
-    color: #007bff; /* Change color on hover */
-    text-decoration: none; /* Remove underline from links */
+    color: #007bff;
+    text-decoration: none;
 }
 
-/* Container styling for consistent layout */
+/* Container Styling */
 .container {
-    max-width: 1140px; /* Set maximum width */
-    padding: 0 15px; /* Add padding on sides */
-    margin: 0 auto; /* Center the container */
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
-/* Styling for card images */
-.card-img-top {
-    max-height: 180px; /* Set maximum height */
-    object-fit: cover; /* Cover the image */
-}
-.submit{
+.submit {
     width: 100%;
 }
 
-/* Navbar styles for medium and larger screens */
+/* Media Queries */
 @media (min-width: 768px) {
     .navbar-nav {
-        margin-left: auto; /* Align navbar items to the right */
+        margin-left: auto;
     }
 }
 
-/* Navbar styles for smaller screens */
 @media (max-width: 767px) {
     .navbar {
-        text-align: center; /* Center the navbar content */
+        text-align: center;
     }
-
 }
-
-
